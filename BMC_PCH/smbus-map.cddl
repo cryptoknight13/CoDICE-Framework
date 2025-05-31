@@ -1,0 +1,6 @@
+smbus-map = {
+    &(SmbusFilterRegions: 0) => region-id-map
+    &(BusIdNumber: 1) => uint .size 1
+    &(SlaveIdNumber: 2) => bytes .size 1
+    &(SmbusCommandList: 3) => [+ bytes .size 1]
+}

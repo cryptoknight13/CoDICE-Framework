@@ -1,0 +1,7 @@
+extended-measurement-map = {
+    &(MeasurementManifestRegions: 0) => region-id-map
+    &(MeasurementType: 1) => measurement-type-map
+    &(RecordNumber1: 2) => uint .size 1
+    &(ExtensiveORMeasurementRecords: 3) => [ + uint .size 1]
+    &(OtherExtensionRecords: 4) => other-extension-records-map
+}

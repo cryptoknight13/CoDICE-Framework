@@ -1,0 +1,5 @@
+afm-data-map = {
+    &(data_device0_map: 0) => data-device-map
+    &(data_device1_map: 1) => data-device-map
+    &(data_device2_map: 2) => data-device-map
+}

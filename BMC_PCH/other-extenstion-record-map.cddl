@@ -1,0 +1,6 @@
+
+other-extension-records-map = {
+    &(Config-0: 0) => 0..1
+    &(Fuse-2: 1) => 0..1
+    &(Manifest-0: 2) => 0..1
+}

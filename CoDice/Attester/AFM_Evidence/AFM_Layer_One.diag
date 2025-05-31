@@ -1,0 +1,455 @@
+{
+  /root_private_key/ 0: "key_root_prv.pem",
+  /csk_private_key/ 1: "key_csk_prv.pem",
+  /revision/ 2: h'0203',
+  /oem_data/ 3: h'ffffffffffffffffffffffffffffffff',
+  /afm/ 4 : 
+     [
+     {
+        /is_add_on/ 0: 0,
+        /list_devices/ 1 : 
+           [
+            "device0",
+            "device1",
+            "device2"
+          ], 
+        /list_addon_devices/ 2 : 
+           [
+            "device0",
+            "device1",
+            "device2"
+          ], 
+        /afm_header/ 3 : { 
+          /device0/ 0 : { 
+            /device_addr/ 0: h'05',
+            /device_platform_id/ 1: h'80000000',
+            /device_platform_model/ 2: h'3600000000000000',
+            /device_platform_version/ 3: h'5900'
+          },
+          /device1/ 1 : { 
+            /device_addr/ 0: h'07',
+            /device_platform_id/ 1: h'95600000',
+            /device_platform_model/ 2: h'3640000000000000',
+            /device_platform_version/ 3: h'9400'
+          },
+          /device2/ 2 : { 
+            /device_addr/ 0: h'09',
+            /device_platform_id/ 1: h'75800000',
+            /device_platform_model/ 2: h'1100000000000000',
+            /device_platform_version/ 3: h'5100'
+          }
+        },
+        /afm_data/ 4 : { 
+          /device0/ 0 : { 
+            /bus_id/ 0: h'02',
+            /smbus_addr/ 1: h'05',
+            /binding_spec/ 2: h'06',
+            /binding_spec_version/ 3: h'0101',
+            /policy/ 4: h'08',
+            /svn/ 5: h'04',
+            /uuid/ 6: h'09000000000000000000000000000000',
+            /device_platform_id/ 7: h'0000',
+            /device_platform_model/ 8: h'0000000000000000',
+            /device_platform_version/ 9: h'0000',
+            /root_public_key/ 10: "PUB_384.pem",
+            /is_certificate/ 11: "1",
+            /cert_or_device_pub_key/ 12 : 
+               [
+                "CertificateNICFromTraces.bin",
+                "CertificateNICFromTraces_cpy.bin"
+              ], 
+            /measurement/ 13 : 
+               [
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'01',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "80aea88bb31a5720974c0b273fbe5c2ec339ce2136e13c1883f57c84e9a158151e1f6c00cddee2af5a47eab46c4fd3ac"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'01',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "258e50cd322420e0316e7e08ec02b163611d9be3593629b433a6a0e882f7a2218952b49a23d65efcc8dfc892858fe676"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'02',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "4b48ede7512b7a2c8ea8f683674c468b35d4fd64f83200e2b3d25d6f18256a469e4350b96812aef52ce760e3cf4fc29e"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'03',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "211cd46fd693b5b18546f77883528705a523f470221e8cfdcc3311c7be95f627a78dadd7f7bd9328f0162adb26a53c14"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'04',
+                  /meas_value_type/ 2: h'84',
+                  /meas_value_size/ 3: h'40',
+                  /measurement/ 4 : 
+                     [
+                      "0505050505050505050505050505050505050505050505050505050505050505",
+                      "0505050505050505050505050505050505050505050505050505050505050505"
+                    ] 
+               }
+              ] 
+          },
+          /device1/ 1 : { 
+            /bus_id/ 0: h'04',
+            /smbus_addr/ 1: h'02',
+            /binding_spec/ 2: h'07',
+            /binding_spec_version/ 3: h'0101',
+            /policy/ 4: h'08',
+            /svn/ 5: h'04',
+            /uuid/ 6: h'09000000000000000000000000000000',
+            /device_platform_id/ 7: h'00000000000000000000',
+            /device_platform_model/ 8: h'00000000',
+            /device_platform_version/ 9: h'00000000',
+            /root_public_key/ 10: "PUB_384.pem",
+            /is_certificate/ 11: "1",
+            /cert_or_device_pub_key/ 12 : 
+               [
+                "CertificateNICFromTraces.bin"
+              ], 
+            /measurement/ 13 : 
+               [
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'01',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "80aea88bb31a5720974c0b273fbe5c2ec339ce2136e13c1883f57c84e9a158151e1f6c00cddee2af5a47eab46c4fd3ac"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'02',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "258e50cd322420e0316e7e08ec02b163611d9be3593629b433a6a0e882f7a2218952b49a23d65efcc8dfc892858fe676"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'03',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "4b48ede7512b7a2c8ea8f683674c468b35d4fd64f83200e2b3d25d6f18256a469e4350b96812aef52ce760e3cf4fc29e"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'04',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "211cd46fd693b5b18546f77883528705a523f470221e8cfdcc3311c7be95f627a78dadd7f7bd9328f0162adb26a53c14"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'05',
+                  /meas_value_type/ 2: h'84',
+                  /meas_value_size/ 3: h'40',
+                  /measurement/ 4 : 
+                     [
+                      "0505050505050505050505050505050505050505050505050505050505050505",
+                      "0505050505050505050505050505050505050505050505050505050505050505"
+                    ] 
+               }
+              ] 
+          },
+          /device2/ 2 : { 
+            /bus_id/ 0: h'08',
+            /smbus_addr/ 1: h'09',
+            /binding_spec/ 2: h'04',
+            /binding_spec_version/ 3: h'0101',
+            /policy/ 4: h'00',
+            /svn/ 5: h'05',
+            /uuid/ 6: h'09000000000000000000000000000000',
+            /device_platform_id/ 7: h'00000000000000000000',
+            /device_platform_model/ 8: h'00000000',
+            /device_platform_version/ 9: h'00000000',
+            /root_public_key/ 10: "PUB_384.pem",
+            /is_certificate/ 11: "1",
+            /cert_or_device_pub_key/ 12 : 
+               [
+                "CertificateNICFromTraces.bin"
+              ], 
+            /measurement/ 13 : 
+               [
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'01',
+                  /meas_value_type/ 2: h'01',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "16882e5fa7c6bd221abba244a486d9fe30d8be6dc8534a69065367bb93b0ceadad905596c79ffdaf6e8263f2e737c12b"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'02',
+                  /meas_value_type/ 2: h'01',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "f5418bce119eddd59c1966a5f59c254fca512283084f550269d8ca94baf00f47a8ae52b7d364a1e48a7a7d1af1c8394c"
+                    ] 
+               }
+              ] 
+          }
+        }
+     },
+     {
+        /is_add_on/ 0: 1,
+        /list_devices/ 1 : 
+           [
+            "device0",
+            "device1",
+            "device2"
+          ], 
+        /list_addon_devices/ 2 : 
+           [
+            "device0",
+            "device1",
+            "device2"
+          ], 
+        /afm_header/ 3 : { 
+          /device0/ 0 : { 
+            /device_addr/ 0: h'08',
+            /device_platform_id/ 1: h'00000000',
+            /device_platform_model/ 2: h'0000000000000000',
+            /device_platform_version/ 3: h'0000'
+          },
+          /device1/ 1 : { 
+            /device_addr/ 0: h'07',
+            /device_platform_id/ 1: h'00000000',
+            /device_platform_model/ 2: h'0000000000000000',
+            /device_platform_version/ 3: h'0000'
+          },
+          /device2/ 2 : { 
+            /device_addr/ 0: h'09',
+            /device_platform_id/ 1: h'00000000',
+            /device_platform_model/ 2: h'0000000000000000',
+            /device_platform_version/ 3: h'0000'
+          }
+        },
+        /afm_data/ 4 : { 
+          /device0/ 0 : { 
+            /bus_id/ 0: h'05',
+            /smbus_addr/ 1: h'06',
+            /binding_spec/ 2: h'06',
+            /binding_spec_version/ 3: h'0101',
+            /policy/ 4: h'08',
+            /svn/ 5: h'07',
+            /uuid/ 6: h'09000000000000000000000000000000',
+            /device_platform_id/ 7: h'0000',
+            /device_platform_model/ 8: h'0000000000000000',
+            /device_platform_version/ 9: h'0000',
+            /root_public_key/ 10: "PUB_384.pem",
+            /is_certificate/ 11: "1",
+            /cert_or_device_pub_key/ 12 : 
+               [
+                "CertificateNICFromTraces.bin",
+                "CertificateNICFromTraces_cpy.bin"
+              ], 
+            /measurement/ 13 : 
+               [
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'10',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "80aea88bb31a5720974c0b273fbe5c2ec339ce2136e13c1883f57c84e9a158151e1f6c00cddee2af5a47eab46c4fd3ac"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'01',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "258e50cd322420e0316e7e08ec02b163611d9be3593629b433a6a0e882f7a2218952b49a23d65efcc8dfc892858fe676"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'02',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "4b48ede7512b7a2c8ea8f683674c468b35d4fd64f83200e2b3d25d6f18256a469e4350b96812aef52ce760e3cf4fc29e"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'03',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "211cd46fd693b5b18546f77883528705a523f470221e8cfdcc3311c7be95f627a78dadd7f7bd9328f0162adb26a53c14"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'04',
+                  /meas_value_type/ 2: h'84',
+                  /meas_value_size/ 3: h'40',
+                  /measurement/ 4 : 
+                     [
+                      "0505050505050505050505050505050505050505050505050505050505050505",
+                      "0505050505050505050505050505050505050505050505050505050505050505"
+                    ] 
+               }
+              ] 
+          },
+          /device1/ 1 : { 
+            /bus_id/ 0: h'56',
+            /smbus_addr/ 1: h'05',
+            /binding_spec/ 2: h'06',
+            /binding_spec_version/ 3: h'0101',
+            /policy/ 4: h'08',
+            /svn/ 5: h'04',
+            /uuid/ 6: h'09000000000000000000000000000000',
+            /device_platform_id/ 7: h'00000000000000000000',
+            /device_platform_model/ 8: h'00000000',
+            /device_platform_version/ 9: h'00000000',
+            /root_public_key/ 10: "PUB_384.pem",
+            /is_certificate/ 11: "1",
+            /cert_or_device_pub_key/ 12 : 
+               [
+                "CertificateNICFromTraces.bin"
+              ], 
+            /measurement/ 13 : 
+               [
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'01',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "80aea88bb31a5720974c0b273fbe5c2ec339ce2136e13c1883f57c84e9a158151e1f6c00cddee2af5a47eab46c4fd3ac"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'02',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "258e50cd322420e0316e7e08ec02b163611d9be3593629b433a6a0e882f7a2218952b49a23d65efcc8dfc892858fe676"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'03',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "4b48ede7512b7a2c8ea8f683674c468b35d4fd64f83200e2b3d25d6f18256a469e4350b96812aef52ce760e3cf4fc29e"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'04',
+                  /meas_value_type/ 2: h'81',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "211cd46fd693b5b18546f77883528705a523f470221e8cfdcc3311c7be95f627a78dadd7f7bd9328f0162adb26a53c14"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'05',
+                  /meas_value_type/ 2: h'84',
+                  /meas_value_size/ 3: h'40',
+                  /measurement/ 4 : 
+                     [
+                      "0505050505050505050505050505050505050505050505050505050505050505",
+                      "0505050505050505050505050505050505050505050505050505050505050505"
+                    ] 
+               }
+              ] 
+          },
+          /device2/ 2 : { 
+            /bus_id/ 0: h'02',
+            /smbus_addr/ 1: h'09',
+            /binding_spec/ 2: h'06',
+            /binding_spec_version/ 3: h'0101',
+            /policy/ 4: h'00',
+            /svn/ 5: h'02',
+            /uuid/ 6: h'09000000000000000000000000000000',
+            /device_platform_id/ 7: h'00000000000000000000',
+            /device_platform_model/ 8: h'00000000',
+            /device_platform_version/ 9: h'00000000',
+            /root_public_key/ 10: "PUB_384.pem",
+            /is_certificate/ 11: "1",
+            /cert_or_device_pub_key/ 12 : 
+               [
+                "CertificateNICFromTraces.bin"
+              ], 
+            /measurement/ 13 : 
+               [
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'01',
+                  /meas_value_type/ 2: h'01',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "16882e5fa7c6bd221abba244a486d9fe30d8be6dc8534a69065367bb93b0ceadad905596c79ffdaf6e8263f2e737c12b"
+                    ] 
+               },
+               {
+                  /number_of_possible_measurement/ 0: h'01',
+                  /meas_value_index/ 1: h'02',
+                  /meas_value_type/ 2: h'01',
+                  /meas_value_size/ 3: h'30',
+                  /measurement/ 4 : 
+                     [
+                      "f5418bce119eddd59c1966a5f59c254fca512283084f550269d8ca94baf00f47a8ae52b7d364a1e48a7a7d1af1c8394c"
+                    ] 
+               }
+              ] 
+          }
+        }
+     }
+    ] 
+},

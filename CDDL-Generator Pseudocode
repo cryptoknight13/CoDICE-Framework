@@ -1,0 +1,21 @@
+Combines multiple CDDL fragments into a single CDDL file for schema validation.
+
+Initialize
+    Input: Directory containing .cddl files
+    Output: auto-gen.cddl
+    Skip: root.cddl (included only once at the top)
+
+Start
+    IF no directory path given THEN
+        Show error and exit
+
+    Set working directory to the given path
+
+    Open auto-gen.cddl for writing
+    Write contents of root.cddl at the top
+
+    FOR each .cddl file in directory DO
+        IF file is not root.cddl THEN
+            Read and append its contents to auto-gen.cddl
+
+End

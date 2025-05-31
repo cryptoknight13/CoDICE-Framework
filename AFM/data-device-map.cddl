@@ -1,0 +1,16 @@
+data-device-map = {
+    &(bus_id: 0) => bytes .size 1
+    &(smbus_addr: 1) => bytes .size 1
+    &(binding_spec: 2) => bytes .size 1
+    &(binding_spec_version: 3) => bytes .size 2
+    &(policy: 4) => bytes .size 1
+    &(svn: 5) => bytes .size 1
+    &(uuid: 6) => bytes .size 16
+    &(device_platform_id: 7) => bytes .size 10 / bytes .size 2
+    &(device_platform_model: 8) => bytes .size 8 / bytes .size 4
+    &(device_platform_version: 9) => bytes .size 2 / bytes .size 4
+    &(root_public_key: 10) => tstr .size 11
+    &(is_certificate: 11) => tstr .size 1
+    &(cert_or_device_pub_key: 12) => [+ tstr .size 28 / tstr .size 32]
+    &(measurement: 13) => measurement-list
+}

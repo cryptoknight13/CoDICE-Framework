@@ -1,0 +1,11 @@
+flags = {
+    &(ActiveAuthenticate: 0) => 0..1
+    &(BackupAuthenticate: 1) => 0..1
+    &(RegionType: 2)  => region-type-map
+    &(VerificationShaType: 3) => sha-type-map
+    &(AttestationShaType: 4) => sha-type-map
+    &(ConfigurationRegion: 5) => 0..1
+    &(OOBiosUpdate: 6) => 0..1
+    &(RebootRequired: 7) => 0..1
+    &(BackUpRegionId: 8) => uint .size 1
+}

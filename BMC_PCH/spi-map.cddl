@@ -1,0 +1,11 @@
+
+spi-map = {
+    &(SpiRegions: 0) => spi-regions-map
+    &(Flags: 1) => flags
+    &(PointerToActiveRegion: 2) => bytes .size 4
+    &(ActiveRegionLength: 3) => bytes .size 4
+    &(ActiveComponentSvnNumber: 4) => bytes .size 4
+    &(PointerToRecoveryRegion: 5) => bytes .size 4
+    &(RecoveryRegionLength: 6) => bytes .size 4
+    &(RecoveryComponentSvnNumber: 7) => bytes .size 4
+}

@@ -1,0 +1,5 @@
+spi-regions-map = {
+    &(RegionId: 0) => uint .size 1
+    &(ActiveSpitType: 1) => active-spi-type-map
+    &(RecoverSpiType: 2) => recovery-spi-type-map
+}

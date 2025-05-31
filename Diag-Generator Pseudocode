@@ -1,0 +1,36 @@
+Converts vendor JSON manifest into human-readable DIAG format for validation.
+
+Initialize
+    Input: JSON file (from command-line)
+    Output: DIAG file (default: diag_auto_gen.diag)
+    Variables: counter = 0, indent = 1
+
+Start
+    IF no input file THEN
+        Show error and exit
+
+    Read JSON file into json_data
+    result ← "{\n" + JSON_to_DIAG(json_data, counter, indent) + "}"
+    Write result to output file
+
+Subroutine JSON_to_DIAG(json, counter, indent)
+    IF json is list THEN
+        FOR each item DO
+            Recursively format item
+        RETURN formatted list
+
+    IF json is dict THEN
+        FOR each (key, value) DO
+            IF value is dict or list THEN
+                Recursively call JSON_to_DIAG
+            ELSE
+                Format with Primitive_to_DIAG
+            Increment counter
+        RETURN formatted map
+
+Subroutine Primitive_to_DIAG(value, key, indent)
+    IF key requires padding THEN pad value
+    IF value is hex string THEN format as h'...'
+    ELSE format as string or integer
+
+End

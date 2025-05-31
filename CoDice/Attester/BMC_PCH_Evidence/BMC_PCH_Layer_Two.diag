@@ -1,0 +1,544 @@
+{
+  /ManifestHeader/ 0 : { 
+    /Signature/ 0: "$EPP",
+    /ManifestDataVersionNumber/ 1: h'00000001',
+    /ManifestActivePointer/ 2: h'00000000',
+    /BiosSvnActiveNumber/ 3: h'0ffff001',
+    /BiosSvnRecoveryNumber/ 4: h'00000001',
+    /ActiveBiosVersion/ 5: "1.00",
+    /RecoveryBiosVersion/ 6: "1.00",
+    /RootKey/ 7: h'652d0b71cf3e807d1ab4c6222e58f23a9bd04ce17a5de1f9302c47b896da540e61bf2734c89ed59ac54d32f0671ab8c54d2d0b71cf3e807d1ab4c62e58f23a9bd04ce17a5de1f9302c47b896da540e61bf2734c89ed59ac54d32f0671ab8c54d',
+    /SpiFilterFlag/ 8: 1,
+    /DynamicEraseCount/ 9: 2
+  },
+  /ManifestBody/ 1 : 
+     [
+      [
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 1,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 1,
+            /BackupAuthenticate/ 1: 1,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 1
+          },
+          /PointerToActiveRegion/ 2: h'00000000',
+          /ActiveRegionLength/ 3: h'000f0000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'04000000',
+          /RecoveryRegionLength/ 6: h'000f0000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 2,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 0,
+            /BackupAuthenticate/ 1: 0,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 2
+          },
+          /PointerToActiveRegion/ 2: h'000f0000',
+          /ActiveRegionLength/ 3: h'00010000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'040f0000',
+          /RecoveryRegionLength/ 6: h'00010000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 3,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 0,
+            /BackupAuthenticate/ 1: 0,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 3
+          },
+          /PointerToActiveRegion/ 2: h'00100000',
+          /ActiveRegionLength/ 3: h'00200000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'04100000',
+          /RecoveryRegionLength/ 6: h'00200000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 4,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 0,
+            /BackupAuthenticate/ 1: 0,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 4
+          },
+          /PointerToActiveRegion/ 2: h'00300000',
+          /ActiveRegionLength/ 3: h'00200000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'04300000',
+          /RecoveryRegionLength/ 6: h'00200000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 5,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 1,
+            /BackupAuthenticate/ 1: 1,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 5
+          },
+          /PointerToActiveRegion/ 2: h'00500000',
+          /ActiveRegionLength/ 3: h'01dc0000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'04500000',
+          /RecoveryRegionLength/ 6: h'01dc0000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 6,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 1,
+            /BackupAuthenticate/ 1: 1,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 6
+          },
+          /PointerToActiveRegion/ 2: h'022c0000',
+          /ActiveRegionLength/ 3: h'00450000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'062c0000',
+          /RecoveryRegionLength/ 6: h'00450000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 7,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 1,
+            /BackupAuthenticate/ 1: 1,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /   / 8: 7
+          },
+          /PointerToActiveRegion/ 2: h'02710000',
+          /ActiveRegionLength/ 3: h'004f0000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'06710000',
+          /RecoveryRegionLength/ 6: h'004f0000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 8,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 1,
+            /BackupAuthenticate/ 1: 1,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 8
+          },
+          /PointerToActiveRegion/ 2: h'02c00000',
+          /ActiveRegionLength/ 3: h'00030000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'06c00000',
+          /RecoveryRegionLength/ 6: h'00030000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 9,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 1,
+            /BackupAuthenticate/ 1: 1,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 9
+          },
+          /PointerToActiveRegion/ 2: h'02c30000',
+          /ActiveRegionLength/ 3: h'00100000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'06c30000',
+          /RecoveryRegionLength/ 6: h'00100000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 10,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 0,
+            /BackupAuthenticate/ 1: 0,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 10
+          },
+          /PointerToActiveRegion/ 2: h'02d30000',
+          /ActiveRegionLength/ 3: h'012c0000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'06d30000',
+          /RecoveryRegionLength/ 6: h'012c0000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       },
+       {
+          /SpiRegions/ 0 : { 
+            /RegionId/ 0: 11,
+            /ActiveSpiType/ 1 : { 
+              /G/ 0: 0,
+              /W/ 1: 1,
+              /B/ 2: 0
+            },
+            /RecoverySpiType/ 2 : { 
+              /G/ 0: 0,
+              /W/ 1: 0,
+              /B/ 2: 1
+            }
+          },
+          /Flags/ 1 : { 
+            /ActiveAuthenticate/ 0: 1,
+            /BackupAuthenticate/ 1: 1,
+            /RegionType/ 2 : { 
+              /ActiveRegion/ 0: 1,
+              /BackUpRegion/ 1: 0
+            },
+            /VerificationShaType/ 3 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /AttestationShaType/ 4 : { 
+              /sha-256/ 0: 1,
+              /sha-384/ 1: 0
+            },
+            /configurationRegion/ 5: 0,
+            /OOBBiosUpdate/ 6: 1,
+            /RebootRequired/ 7: 1,
+            /BackUpRegionId/ 8: 1
+          },
+          /PointerToActiveRegion/ 2: h'03ff0000',
+          /ActiveRegionLength/ 3: h'00010000',
+          /ActiveComponentSvnNumber/ 4: h'00000000',
+          /PointerToRecoveryRegion/ 5: h'07ff0000',
+          /RecoveryRegionLength/ 6: h'00010000',
+          /RecoveryComponentSvnNumber/ 7: h'00000000'
+       }
+      ],
+      [
+       {
+          /SmbusFilterRegions/ 0 : { 
+            /RegionId/ 0: 12
+          },
+          /BusIdNumber/ 1: 1,
+          /SlaveIdNumber/ 2: h'60',
+          /SmbusCommandList/ 3 : 
+             [
+              h'00',
+              h'42',
+              h'43',
+              h'82',
+              h'ad',
+              h'c5',
+              h'c7',
+              h'f0'
+            ] 
+       }
+      ],
+      [
+       {
+          /MeasurementManifestRegions/ 0 : { 
+            /RegionId/ 0: 13
+          },
+          /MeasurementType/ 1 : { 
+            /SPDM/ 0: 1,
+            /TPM-PCR/ 1: 0,
+            /Reserved/ 2: 0,
+            /InternalMeasurement/ 3: 0
+          },
+          /RecordNumber1/ 2: 1,
+          /ExtensiveORMeasurementRecords/ 3 : 
+             [
+              1,
+              2,
+              3,
+              126
+            ], 
+          /OtherExtensionRecords/ 4 : { 
+            /Config-0/ 0: 0,
+            /Fuse-2/ 1: 1,
+            /Manifest-0/ 2: 1
+          }
+       },
+       {
+          /MeasurementManifestRegions/ 0 : { 
+            /RegionId/ 0: 14
+          },
+          /MeasurementType/ 1 : { 
+            /SPDM/ 0: 0,
+            /TPM-PCR/ 1: 0,
+            /Reserved/ 2: 0,
+            /InternalMeasurement/ 3: 1
+          },
+          /RecordNumber1/ 2: 1,
+          /ExtensiveORMeasurementRecords/ 3 : 
+             [
+              1,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              126
+            ], 
+          /OtherExtensionRecords/ 4 : { 
+            /Config-0/ 0: 0,
+            /Fuse-2/ 1: 1,
+            /Manifest-0/ 2: 1
+          }
+       }
+      ]
+    ] 
+},

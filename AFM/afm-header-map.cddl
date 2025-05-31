@@ -1,0 +1,5 @@
+afm-header-map = {
+    &(device0: 0) => header-device-map
+    &(device1: 1) => header-device-map
+    &(device2: 2) => header-device-map
+}

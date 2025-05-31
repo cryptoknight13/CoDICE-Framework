@@ -1,0 +1,6 @@
+measurement-type-map = {
+    &(SPDM: 0) => 0..1
+    &(TPM-PCR: 1) => 0..1
+    &(Reserved: 2) => 0..1
+    &(InternalMeasurement: 3) => 0..1
+}

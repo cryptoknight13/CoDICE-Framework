@@ -1,0 +1,7 @@
+measurement-map = {
+    &(number_of_possible_measurement: 0) => bytes .size 1
+    &(meas_value_index: 1) => bytes .size 1
+    &(meas_value_type: 2) => bytes .size 1
+    &(meas_value_size: 3) => bytes .size 1
+    &(measurement: 4) => [+ measurement-hash]
+}

@@ -1,0 +1,6 @@
+header-device-map = {
+    &(device_addr: 0) => bytes .size 1
+    &(device_platform_id: 1) => bytes .size 4
+    &(device_platform_model: 2) => bytes .size 8
+    &(device_platform_version: 3) => bytes .size 2
+}

@@ -1,0 +1,8 @@
+rim = {
+    &(root_private_key: 0) => tstr .size 16
+    &(csk_private_key: 1) => tstr .size 15
+    &(revision: 2) => bytes .size 2
+    &(oem_data: 3) => bytes .size 16
+    &(afm: 4) => afm-body
+}
+

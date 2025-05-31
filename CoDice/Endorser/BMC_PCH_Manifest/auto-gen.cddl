@@ -1,0 +1,113 @@
+rim = {
+    &(ManifestHeader: 0) => manifest-header
+    &(ManifestBody: 1) => manifest-body
+}
+ 
+manifest-body = [
+    spi-body-objects: [ + spi-map]
+    smbus-body-objects: [+ smbus-map]
+    measurement-body-objects: [+ extended-measurement-map]
+    
+]
+ 
+region-id-map = {
+    &(RegionID: 0) => uint .size 1
+}
+ 
+
+other-extension-records-map = {
+    &(Config-0: 0) => 0..1
+    &(Fuse-2: 1) => 0..1
+    &(Manifest-0: 2) => 0..1
+}
+ 
+
+spi-map = {
+    &(SpiRegions: 0) => spi-regions-map
+    &(Flags: 1) => flags
+    &(PointerToActiveRegion: 2) => bytes .size 4
+    &(ActiveRegionLength: 3) => bytes .size 4
+    &(ActiveComponentSvnNumber: 4) => bytes .size 4
+    &(PointerToRecoveryRegion: 5) => bytes .size 4
+    &(RecoveryRegionLength: 6) => bytes .size 4
+    &(RecoveryComponentSvnNumber: 7) => bytes .size 4
+}
+ 
+sha-type-map = {
+    &(SHA-256: 0) => 0..1
+    &(SHA-384: 1) => 0..1
+}
+ 
+extended-measurement-map = {
+    &(MeasurementManifestRegions: 0) => region-id-map
+    &(MeasurementType: 1) => measurement-type-map
+    &(RecordNumber1: 2) => uint .size 1
+    &(ExtensiveORMeasurementRecords: 3) => [ + uint .size 1]
+    &(OtherExtensionRecords: 4) => other-extension-records-map
+}
+ 
+spi-regions-map = {
+    &(RegionId: 0) => uint .size 1
+    &(ActiveSpitType: 1) => active-spi-type-map
+    &(RecoverSpiType: 2) => recovery-spi-type-map
+}
+ 
+active-spi-type-map = {
+    &(G: 0) => 0..1
+    &(W: 1) => 0..1
+    &(B: 2) => 0..1
+}
+ 
+region-type-map = {
+    &(ActiveRegion: 0) => 0..1
+    &(BackupRegion: 1) => 0..1
+}
+
+ 
+manifest-header = {
+    &(Signature: 0) => tstr .size 4
+    &(ManifestDataVersionNumber: 1) => bytes .size 4
+    &(ManifestActivePointer: 2) => bytes .size 4
+    &(BiosSvnActiveNumber: 3) => bytes .size 4
+    &(BiosSvnRecoveryNumber: 4) => bytes .size 4
+    &(ActiveBiosVersion: 5) => tstr .size 4
+    &(RecoveryBiosVersion: 6) => tstr .size 4
+    &(RootKey: 7) => bytes .size 96
+    &(SpiFilterFlag: 8) => 0..1
+    &(DynamicEraseCount: 9) => 0..3
+}
+ 
+
+ 
+flags = {
+    &(ActiveAuthenticate: 0) => 0..1
+    &(BackupAuthenticate: 1) => 0..1
+    &(RegionType: 2)  => region-type-map
+    &(VerificationShaType: 3) => sha-type-map
+    &(AttestationShaType: 4) => sha-type-map
+    &(ConfigurationRegion: 5) => 0..1
+    &(OOBiosUpdate: 6) => 0..1
+    &(RebootRequired: 7) => 0..1
+    &(BackUpRegionId: 8) => uint .size 1
+}
+ 
+smbus-map = {
+    &(SmbusFilterRegions: 0) => region-id-map
+    &(BusIdNumber: 1) => uint .size 1
+    &(SlaveIdNumber: 2) => bytes .size 1
+    &(SmbusCommandList: 3) => [+ bytes .size 1]
+}
+ 
+measurement-type-map = {
+    &(SPDM: 0) => 0..1
+    &(TPM-PCR: 1) => 0..1
+    &(Reserved: 2) => 0..1
+    &(InternalMeasurement: 3) => 0..1
+}
+ 
+recovery-spi-type-map = {
+    &(G: 0) => 0..1
+    &(W: 1) => 0..1
+    &(B: 2) => 0..1
+}
+ 

@@ -1,0 +1,4 @@
+region-type-map = {
+    &(ActiveRegion: 0) => 0..1
+    &(BackupRegion: 1) => 0..1
+}

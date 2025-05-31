@@ -1,0 +1,4 @@
+rim = {
+    &(ManifestHeader: 0) => manifest-header
+    &(ManifestBody: 1) => manifest-body
+}

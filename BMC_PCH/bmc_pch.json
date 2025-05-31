@@ -1,0 +1,541 @@
+{
+    "ManifestHeader": {
+      "Signature": "$EPP",
+      "ManifestDataVersionNumber": "0x00000001",
+      "ManifestActivePointer": "0x00000000",
+      "BiosSvnActiveNumber": "0x0FFFF001",
+      "BiosSvnRecoveryNumber": "0x00000001",
+      "ActiveBiosVersion": "1.0",
+      "RecoveryBiosVersion": "1.0",
+      "RootKey": "0x652D0B71CF3E807D1AB4C6222E58F23A9BD04CE17A5DE1F9302C47B896DA540E61BF2734C89ED59AC54D32F0671AB8C54D2D0B71CF3E807D1AB4C62E58F23A9BD04CE17A5DE1F9302C47B896DA540E61BF2734C89ED59AC54D32F0671AB8C54D",
+      "SpiFilterFlag": 1,
+      "DynamicEraseCount": 2
+    },
+    "ManifestBody": [
+      [
+        {
+          "SpiRegions": {
+            "RegionId": 1,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 1,
+            "BackupAuthenticate": 1,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 1
+          },
+          "PointerToActiveRegion": "0x00000000",
+          "ActiveRegionLength": "0x000F0000",
+          "ActiveComponentSvnNumber": "0x00000000",
+      "PointerToRecoveryRegion":"0x04000000",
+          "RecoveryRegionLength": "0x000F0000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 2,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 0,
+            "BackupAuthenticate": 0,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 2
+          },
+          "PointerToActiveRegion": "0x000F0000",
+          "ActiveRegionLength": "0x00010000",
+          "ActiveComponentSvnNumber": "0x00000000",
+      "PointerToRecoveryRegion":"0x040F0000",
+          "RecoveryRegionLength": "0x00010000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 3,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 0,
+            "BackupAuthenticate": 0,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 3
+          },
+          "PointerToActiveRegion": "0x00100000",
+          "ActiveRegionLength": "0x00200000",
+          "ActiveComponentSvnNumber": "0x00000000",
+      "PointerToRecoveryRegion":"0x04100000",
+          "RecoveryRegionLength": "0x00200000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 4,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 0,
+            "BackupAuthenticate": 0,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 4
+          },
+          "PointerToActiveRegion": "0x00300000",
+          "ActiveRegionLength": "0x00200000",
+          "ActiveComponentSvnNumber": "0x00000000",
+            "PointerToRecoveryRegion":"0x04300000",
+          "RecoveryRegionLength": "0x00200000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 5,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 1,
+            "BackupAuthenticate": 1,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 5
+          },
+          "PointerToActiveRegion": "0x00500000",
+          "ActiveRegionLength": "0x01DC0000",
+          "ActiveComponentSvnNumber": "0x00000000",
+      "PointerToRecoveryRegion":"0x04500000",
+          "RecoveryRegionLength": "0x01DC0000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 6,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 1,
+            "BackupAuthenticate": 1,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 6
+          },
+          "PointerToActiveRegion": "0x022C0000",
+          "ActiveRegionLength": "0x00450000",
+          "ActiveComponentSvnNumber": "0x00000000",
+          "PointerToRecoveryRegion": "0x062C0000",
+          "RecoveryRegionLength": "0x00450000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 7,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 1,
+            "BackupAuthenticate": 1,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "   ": 7
+          },
+          "PointerToActiveRegion": "0x02710000",
+          "ActiveRegionLength": "0x004f0000",
+          "ActiveComponentSvnNumber": "0x00000000",
+          "PointerToRecoveryRegion": "0x06710000",
+          "RecoveryRegionLength": "0x004f0000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 8,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 1,
+            "BackupAuthenticate": 1,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 8
+          },
+          "PointerToActiveRegion": "0x02C00000",
+          "ActiveRegionLength": "0x00030000",
+          "ActiveComponentSvnNumber": "0x00000000",
+          "PointerToRecoveryRegion": "0x06C00000",
+          "RecoveryRegionLength": "0x00030000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 9,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 1,
+            "BackupAuthenticate": 1,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 9
+          },
+          "PointerToActiveRegion": "0x02C30000",
+          "ActiveRegionLength": "0x00100000",
+          "ActiveComponentSvnNumber": "0x00000000",
+          "PointerToRecoveryRegion": "0x06C30000",
+          "RecoveryRegionLength": "0x00100000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 10,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 0,
+            "BackupAuthenticate": 0,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 10
+          },
+          "PointerToActiveRegion": "0x02D30000",
+          "ActiveRegionLength": "0x012C0000",
+          "ActiveComponentSvnNumber": "0x00000000",
+          "PointerToRecoveryRegion": "0x06D30000",
+          "RecoveryRegionLength": "0x012C0000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        },
+        {
+          "SpiRegions": {
+            "RegionId": 11,
+            "ActiveSpiType": {
+              "G": 0,
+              "W": 1,
+              "B": 0
+            },
+            "RecoverySpiType": {
+              "G": 0,
+              "W": 0,
+              "B": 1
+            }
+          },
+          "Flags": {
+            "ActiveAuthenticate": 1,
+            "BackupAuthenticate": 1,
+            "RegionType": {
+              "ActiveRegion": 1,
+              "BackUpRegion": 0
+            },
+            "VerificationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "AttestationShaType": {
+              "sha-256": 1,
+              "sha-384": 0
+            },
+            "configurationRegion": 0,
+            "OOBBiosUpdate": 1,
+            "RebootRequired": 1,
+            "BackUpRegionId": 1
+          },
+          "PointerToActiveRegion": "0x03FF0000",
+          "ActiveRegionLength": "0x00010000",
+          "ActiveComponentSvnNumber": "0x00000000",
+          "PointerToRecoveryRegion": "0x07FF0000",
+          "RecoveryRegionLength": "0x00010000",
+          "RecoveryComponentSvnNumber": "0x00000000"
+        }
+      ],
+      [
+        {
+          "SmbusFilterRegions": {
+            "RegionId": 12
+          },
+          "BusIdNumber": 1,
+          "SlaveIdNumber": "0x60",
+          "SmbusCommandList": [
+            "0x00",
+            "0x42",
+            "0x43",
+            "0x82",
+            "0xAD",
+            "0xC5",
+            "0xC7",
+            "0xF0"
+          ]
+        }
+      ],
+      [
+        {
+          "MeasurementManifestRegions": {
+            "RegionId": 13
+          },
+          "MeasurementType": {
+            "SPDM": 1,
+            "TPM-PCR": 0,
+            "Reserved": 0,
+            "InternalMeasurement": 0
+          },
+          "RecordNumber1": 1,
+          "ExtensiveORMeasurementRecords": [
+            1,
+            2,
+            3,
+            126
+          ],
+          "OtherExtensionRecords": {
+            "Config-0": 0,
+            "Fuse-2": 1,
+            "Manifest-0": 1
+          }
+        },
+        {
+          "MeasurementManifestRegions": {
+            "RegionId": 14
+          },
+          "MeasurementType": {
+            "SPDM": 0,
+            "TPM-PCR": 0,
+            "Reserved": 0,
+            "InternalMeasurement": 1
+          },
+          "RecordNumber1": 1,
+          "ExtensiveORMeasurementRecords": [
+            1,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            126
+          ],
+          "OtherExtensionRecords": {
+            "Config-0": 0,
+            "Fuse-2": 1,
+            "Manifest-0": 1
+          }
+        }
+      ]
+    ]
+  }
+  

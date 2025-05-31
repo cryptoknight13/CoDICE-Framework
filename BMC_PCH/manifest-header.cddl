@@ -1,0 +1,12 @@
+manifest-header = {
+    &(Signature: 0) => tstr .size 4
+    &(ManifestDataVersionNumber: 1) => bytes .size 4
+    &(ManifestActivePointer: 2) => bytes .size 4
+    &(BiosSvnActiveNumber: 3) => bytes .size 4
+    &(BiosSvnRecoveryNumber: 4) => bytes .size 4
+    &(ActiveBiosVersion: 5) => tstr .size 4
+    &(RecoveryBiosVersion: 6) => tstr .size 4
+    &(RootKey: 7) => bytes .size 96
+    &(SpiFilterFlag: 8) => 0..1
+    &(DynamicEraseCount: 9) => 0..3
+}

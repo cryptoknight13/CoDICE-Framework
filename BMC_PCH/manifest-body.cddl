@@ -1,0 +1,6 @@
+manifest-body = [
+    spi-body-objects: [ + spi-map]
+    smbus-body-objects: [+ smbus-map]
+    measurement-body-objects: [+ extended-measurement-map]
+    
+]

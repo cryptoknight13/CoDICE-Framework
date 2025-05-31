@@ -1,0 +1,7 @@
+afm-entry-map = {
+    &(is_add_on: 0) => 0..1
+    &(list_devices: 1) => device-list
+    &(list_addon_devices: 2) => device-list
+    &(afm_header: 3) => afm-header-map
+    &(afm_data: 4) => afm-data-map
+}
