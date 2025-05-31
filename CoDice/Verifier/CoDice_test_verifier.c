@@ -21,8 +21,9 @@ int main(int argc, char* argv[]){
         return 1;
     }
     printf("Verifying endorser certificate...\n");
+    time_t currentTime = time(NULL);
     int verifyEndorserCert = X509_verify(endorserCert, endorserPubKey);
-    if (verifyEndorserCert != 1) {
+    if (verifyEndorserCert != 1 || X509_cmp_time(X509_get_notBefore(endorserCert), &currentTime) > 0 || X509_cmp_time(X509_get_notAfter(endorserCert), &currentTime) < 0) {
         fprintf(stderr, "Endorser certificate verification failed\n");
         EVP_PKEY_free(endorserPubKey);
         X509_free(endorserCert);
@@ -52,7 +53,8 @@ int main(int argc, char* argv[]){
     }
     printf("Verifying attester certificate...\n");
     int verifyCert = X509_verify(attesterCert, attesterPubKey);
-    if (verifyCert != 1) {
+    currentTime = time(NULL);
+    if (verifyCert != 1 || X509_cmp_time(X509_get_notBefore(attesterCert), &currentTime) > 0 || X509_cmp_time(X509_get_notAfter(attesterCert), &currentTime) < 0) {
         fprintf(stderr, "Attester certificate verification failed\n");
         EVP_PKEY_free(attesterPubKey);
         X509_free(attesterCert);
